@@ -1,12 +1,13 @@
 # YoutubeClone
 Youtube Clone for practice / Clon de Youtube para practicar.
 
-IMPORTANT:
+-IMPORTANT:
 This is a non-profit project. 
-The images in this project are property of YouTube, not mine.
-IMPORTANTE:
+The images in this project are not mine.
+
+-IMPORTANTE:
 Esto es un proyecto sin fines de lucro.
-Las imágenes en este proyecto son propiedad de YouTube no mías.
+Las imágenes en este proyecto no son mías.
 
 - 👋 Hi, I’m Diego Rodriguez / @Haonter
 - 👀 I’m learning about web development.

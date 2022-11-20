@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="icon" href="./Imagenes_Youtube/header.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="bg-[#181818] grilla">
+
+    <section class="col1"> <!--Sidebar / Gap-6 /Mobile Hidden-->
+      <aside class="hidden z-50 md:flex h-screen flex-col sticky top-0 items-center text-white space-y-6 px-1 py-4 text-[10px] bg-[#1d1d1d]">
+        <div class="flex flex-col items-center cursor-pointer"><!--Menu Hambuegresa-->
+          <button class="w-8">
+            <a href="https://www.youtube.com/">
+              <img src="Imagenes_YouTube/BurgerMenu.png" alt="Menú"/></a>
+          </button>
+        </div>
+        <!--Home-->
+        <div class="flex flex-col items-center cursor-pointer">
+          <button class="w-6 pt-1">
+            <a href="https://youtube.com">
+              <img src="Imagenes_Youtube/HomeIcon.png" alt="Home"/></a>
+          </button>
+          <p class="pb-1">Principal</p>
+        </div>
+        <!--Explorar-->
+        <div class="flex flex-col items-center cursor-pointer">
+          <button class="w-7 pt-1">
+            <a href="https://www.youtube.com/feed/explore">
+              <img src="Imagenes_Youtube/Explorar.png" alt="Explore"/></a>
+          </button>
+          <p class="pb-1">Explorar</p>
+        </div>
+        <!--Shorts-->
+        <div class="flex flex-col items-center cursor-pointer">
+          <button class="w-6 pt-1">
+            <a href="https://www.youtube.com/shorts/EF7ir5ceNcQ">
+              <img src="Imagenes_Youtube/Shorts.png" alt="Shorts"/></a>
+          </button>
+          <p class="pb-1">Shorts</p>
+        </div>
+        <!--Suscripciones-->
+        <div class="flex flex-col items-center cursor-pointer">
+          <button class="w-7 pt-1">
+            <a href="https://www.youtube.com/feed/subscriptions">
+              <img src="Imagenes_Youtube/Suscripciones.png" alt="Subscriptions"/></a>
+          </button>
+          <p class="pb-1">Suscripciones</p>
+        </div>
+        <!--Biblioteca-->
+        <div class="flex flex-col items-center cursor-pointer">
+          <button class="w-8 pt-1">
+            <a href="https://www.youtube.com/feed/library">
+              <img src="Imagenes_Youtube/Biblioteca.png" alt="Library"/></a>
+          </button>
+          <p>Biblioteca</p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Barra de Navegacion y Videos / Gap-94 /Mobile Gap 100-->
+    <section class="col2">
+      
+      <!-- NavBar -->
+      <nav class="flex flex-row bg-[#0F0F0F] sticky z-50 top-0 justify-between justify-center items-center h-14">
+        <!-- Logo YouTube -->
+        <div class="flex flex-row">
+          <a class="w-[20vw] sm:w-32 ml-3 mt-1" href="https://youtube.cl">
+            <img class="" src="Imagenes_Youtube/LogoNavBar.png" alt="Youtube-Logo"/></a>
+        </div>
+        <!--Container / Elemento Padre-->
+        <div class="flex flex-row justify-center items-center">
+          <!--Elementos hijos-->
+          <!--Cuadro de entrada de texto-->
+          <input class="width1250 width1040 input-style rounded-l-full bg-[#181818] border focus:border-sky-700 outline-0 h-[40px] pl-3" type="text" placeholder="Buscar"/>
+          <!--Boton de Buscar-->
+          <img src="Imagenes_Youtube/Lupa.png" class="w-[60px] h-[41px] p-1 rounded-r-full outline-0 bg-[#222222] hover:bg-[#2f2f2f] hover:cursor-pointer" alt="Search"/>
+          <!--Boton de Busqueda de Voz-->
+          <button class="ml-2 none570">
+            <img class="rounded-full w-[35px] bg-[#181818] hover:bg-[#303030]" src="Imagenes_Youtube/VoiceSearch.png" alt="VoiceSearch">
+          </button>
+        </div>
+        <div class="flex flex-row space-x-3 justify-center items-center">
+          <!--Subir Video-->
+          <button class="hidden sm:flex">
+            <img src="Imagenes_Youtube/SubirVideo.png" class="w-[28px]" alt="Upload"/>
+          </button>
+          <!--Más-->
+          <button class="hidden sm:flex">
+            <img src="Imagenes_Youtube/Mas.png" class="w-[25px]" alt="More"/>
+          </button>
+          <!--Notificaciones-->
+          <button class="none570">
+            <img src="Imagenes_Youtube/Notificaciones.png" class="w-[28px]" alt="Notifications"/>
+          </button>
+          <!--Perfil-->
+          <button>
+            <a href="https://www.youtube.com/@HaonterDev">
+              <img class="rounded-full mr-4 w-[35px]" src="Imagenes_Youtube/perfilyt.jpg" alt="Profile"/>
+            </a>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Recommendation bar -->
+      <section class="border-t-[1px] border-b-[1px] border-[#0F0F0F] justify-center sticky z-50 top-14 items-center bg-[#0F0F0F]"> <!--Sticky para mantener statico con tailwind-->
+        <div class="ml-4 mb-3 font-roboto">
+          <button class="px-3 border_boton_blanco h-8 text-sm">Todos</button>
+          <button class="br boton-style px-3 border h-8 text-white text-sm">Microsoft</button>
+          <button class="br boton-style px-3 border h-8 text-white text-sm">Windows 11</button>
+          <button class="br boton-style px-3 border h-8 text-white text-sm">Android</button>
+          <button class="br boton-style px-3 border h-8 text-white text-sm hidden md:inline-block">The Witcher</button>
+          <button class="br boton-style px-3 border h-8 text-white text-sm hidden md:inline-block funcionx">While She Sleeps</button>
+        </div>
+      </section>
+      
+      <!-- Videos -->
+      <section> 
+        
+        <div class="flex justify-between px-8 text-white flex-col justify-center items-center sm:flex-row sm:justify-center md:flex-col md:justify-around lg:flex-row lg:justify-start lg:xpace-x-[2vmax]">
+          <div class="flex flex-col sm:flex-col md:flex-row lg:justify-center">
+            <div class="w-[277.96px] h-[262.51] z-30 hover:scale-[112%] hover:z-40 hover:bg-[#1f1f1fcf] hover:delay-150 hover:duration-300 rounded-lg">
+            <br/> <!--Salto de linea-->
+            <button>
+              <a href="https://youtube.com/watch?v=rCQ_JU3eXss">
+                <img src="./Imagenes_Youtube/doom.jpg" class="w-[273px] rounded-lg" alt="DOOM" id="VideoIMG" onmouseleave="imgSalir()" onmouseenter="imgEntrar()"/>
+              </a>
+            </button>
+            <!--Imagen de perfil de canal-->
+            <div class="grid grid-cols-12 justify-center">
+              <div class="col-span-2">
+                <img class="IMG rounded-full w-[30px] mt-1 ml-2" src="Imagenes_Youtube/unnamed(4).jpg"  alt="Pro Gamer"/>
+              </div>
+              <!--Vista previa e informacion del video-->
+              <div class="col-span-9 text-sm">
+                <h5>Hice DOOM 3D + Unreal Engine</h5>
+                <p class="fgris-claro">Pro Gamer</p>
+                <p class="fgris-claro">12k vistas • Hace 1 dia</p>
+              </div>
+            </div>
+            </div>
+
+            <div class="w-[277.96px] h-[262.51] z-30 hover:scale-[112%] hover:z-40 hover:bg-[#1f1f1fcf] hover:delay-150 hover:duration-300 rounded-lg">
+              <br/>
+              <button>
+                <a href="https://www.youtube.com/watch?v=P4L0hZHjK-8">
+                  <img src="./Imagenes_Youtube/nate.webp" class="w-[273px] rounded-lg" alt="Nate Gentile" id="VideoIMG2" onmouseleave="imgSalir2()" onmouseenter="imgEntrar2()"/>
+                </a>
+              </button>
+              <!--Imagen de perfil de canal-->
+              <div class="grid grid-cols-12 justify-center">
+                <div class="col-span-2">
+                  <img class="IMG rounded-full w-[30px] mt-1 ml-2" src="Imagenes_Youtube/natemini.jpg"  alt="Pro Gamer"/>
+                </div>
+                <!--Vista previa e informacion del video-->
+                <div class="col-span-9 text-sm">
+                  <h5>NVIDIA RTX 4080 Sobrevivirá AMD?</h5>
+                  <p class="fgris-claro">Nate Gentile</p>
+                  <p class="fgris-claro">212k vistas • Hace 4 dias</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex flex-col sm:flex-col md:flex-row lg:justify-center"> 
+            <div class="center970 w-[277.96px] h-[262.51] z-30 hover:scale-[112%] hover:z-40 hover:bg-[#1f1f1fcf] hover:delay-150 hover:duration-300 rounded-lg">
+              <br/> <!--Salto de linea-->
+              <button>
+                <a href="https://www.youtube.com/watch?v=eH6tqXQNWUA">
+                  <img src="./Imagenes_Youtube/wss.webp" class="w-[273px] rounded-lg" alt="WSS" id="VideoIMG3" onmouseleave="imgSalir3()" onmouseenter="imgEntrar3()"/>
+                </a>
+              </button>
+              <!--Imagen de perfil de canal-->
+              <div class="grid grid-cols-12 justify-center">
+                <div class="col-span-2">
+                  <img class="IMG rounded-full w-[30px] mt-1 ml-2" src="Imagenes_Youtube/wssmini.jpg"  alt="WSS"/>
+                </div>
+                <!--Vista previa e informacion del video-->
+                <div class="col-span-9 text-sm">
+                  <h5>While She Sleeps - Silence Speaks</h5>
+                  <p class="fgris-claro">While She Sleeps</p>
+                  <p class="fgris-claro">30 M de vistas • Hace 5 años</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="none1250 w-[277.96px] h-[262.51] z-30 hover:scale-[112%] hover:z-40 hover:bg-[#1f1f1fcf] hover:delay-150 hover:duration-300 rounded-lg">
+              <br/> <!--Salto de linea-->
+              <button>
+                <a href="https://www.youtube.com/watch?v=n-sFENXYQZc">
+                  <img src="./Imagenes_Youtube/gta.webp" class="w-[273px] rounded-lg" alt="GTA V" id="VideoIMG4" onmouseleave="imgSalir4()" onmouseenter="imgEntrar4()"/>
+                </a>
+              </button>
+              <!--Imagen de perfil de canal-->
+              <div class="grid grid-cols-12 justify-center">
+                <div class="col-span-2">
+                  <img class="IMG rounded-full w-[30px] mt-1 ml-2" src="Imagenes_Youtube/gtamini.jpg"  alt="Vista Gamer"/>
+                </div>
+                <!--Vista previa e informacion del video-->
+                <div class="col-span-9 text-sm">
+                  <h5>Jugando GTA V sin romper la ley</h5>
+                  <p class="fgris-claro">Vista Gamer</p>
+                  <p class="fgris-claro">11 M de vistas • Hace 5 meses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex justify-between px-8 text-white flex-col justify-center items-center sm:flex-row sm:justify-center md:flex-col md:justify-around lg:flex-row lg:justify-start lg:xpace-x-[2vmax]">
+          <div class="flex flex-col sm:flex-col md:flex-row lg:justify-center"> 
+            <div class="w-[277.96px] h-[262.51] z-30 hover:scale-[112%] hover:z-40 hover:bg-[#1f1f1fcf] hover:delay-150 hover:duration-300 rounded-lg">
+              <br/>
+              <button>
+                <a href="https://www.youtube.com/watch?v=I65FVY6sqWk">
+                  <img src="./Imagenes_Youtube/wss3.webp" class="w-[273px] rounded-lg" alt="WSS" id="VideoIMG5" onmouseleave="imgSalir5()" onmouseenter="imgEntrar5()"/>
+                </a>
+              </button>
+              <!--Imagen de perfil de canal-->
+              <div class="grid grid-cols-12 justify-center">
+                <div class="col-span-2">
+                  <img class="IMG rounded-full w-[30px] mt-1 ml-2" src="Imagenes_Youtube/wssmini.jpg"  alt="WSS"/>
+                </div>
+                <!--Vista previa e informacion del video-->
+                <div class="col-span-9 text-sm">
+                  <h5>While She Sleeps - Steal the Sun</h5>
+                  <p class="fgris-claro">While She Sleeps</p>
+                  <p class="fgris-claro">2.9 M de vistas • Hace 5 años</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-[277.96px] h-[262.51] z-30 hover:scale-[112%] hover:z-40 hover:bg-[#1f1f1fcf] hover:delay-150 hover:duration-300 rounded-lg">
+              <br/><!--Saldo de linea-->
+              <button>
+                <a href="https://www.youtube.com/watch?v=Biq2H8ViOLY">
+                  <img src="./Imagenes_Youtube/luisito.webp" class="w-[273px] rounded-lg" alt="Luisito Comunica" id="VideoIMG6" onmouseleave="imgSalir6()" onmouseenter="imgEntrar6()"/>
+                </a>
+              </button>
+              <!--Imagen de perfil de canal-->
+              <div class="grid grid-cols-12 justify-center">
+                <div class="col-span-2">
+                  <img class="IMG rounded-full w-[30px] mt-1 ml-2" src="Imagenes_Youtube/luisitomini.jpg"  alt="Luisito Comunica"/>
+                </div>
+                <!--Vista previa e informacion del video-->
+                <div class="col-span-9 text-sm">
+                  <h5>Visitando las calles de Chile</h5>
+                  <p class="fgris-claro">Luisito Comunica</p>
+                  <p class="fgris-claro">10 M de vistas • Hace 3 años </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-col md:flex-row lg:justify-center"> 
+            <div class="center970 w-[277.96px] h-[262.51] z-30 hover:scale-[112%] hover:z-40 hover:bg-[#1f1f1fcf] hover:delay-150 hover:duration-300 rounded-lg">
+              <br/><!--Salto de linea-->
+              <button>
+                <a href="https://www.youtube.com/watch?v=mOz5eNcEHu4">
+                  <img src="./Imagenes_Youtube/bluuweb.webp" class="w-[273px] rounded-lg" alt="DOOM" id="VideoIMG7" onmouseleave="imgSalir7()" onmouseenter="imgEntrar7()"/>
+                </a>
+              </button>
+              <!--Imagen de perfil de canal-->
+              <div class="grid grid-cols-12 justify-center">
+                <div class="col-span-2">
+                  <img class="IMG rounded-full w-[30px] mt-1 ml-2" src="Imagenes_Youtube/bluuwebmini.jpg"  alt="Bluuweb"/>
+                </div>
+                <!--Vista previa e informacion del video-->
+                <div class="col-span-9 text-sm">
+                  <h5>React Hooks - Curso para Principiantes</h5>
+                  <p class="fgris-claro">Bluuweb</p>
+                  <p class="fgris-claro">85k vistas • Hace 2 años</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-[277.96px] h-[262.51] z-30 hover:scale-[112%] hover:z-40 hover:bg-[#1f1f1fcf] hover:delay-150 hover:duration-300 rounded-lg">
+              <br/> <!--Salto de linea-->
+              <button>
+                <a href="https://www.youtube.com/watch?v=PHCA8tK117c">
+                  <img src="./Imagenes_Youtube/ME.webp" class="w-[273px] rounded-lg" alt="EA UK" id="VideoIMG8" onmouseleave="imgSalir8()" onmouseenter="imgEntrar8()"/>
+                </a>
+              </button>
+              <!--Imagen de perfil de canal-->
+              <div class="grid grid-cols-12 justify-center">
+                <div class="col-span-2">
+                  <img class="IMG rounded-full w-[30px] mt-1 ml-2" src="Imagenes_Youtube/MEmini.jpg"  alt="EA UK"/>
+                </div>
+                <!--Vista previa e informacion del video-->
+                <div class="col-span-9 text-sm">
+                  <h5>Mass Effect 2 : Cinematic Trailer</h5>
+                  <p class="fgris-claro">Official EA UK</p>
+                  <p class="fgris-claro">697k vistas • hace 12 años</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-between px-8 text-white flex-col justify-center items-center sm:flex-row sm:justify-center md:flex-col md:justify-around lg:flex-row lg:justify-start lg:xpace-x-[2vmax]">  <!--4 videos duplicados (Evitar esto usando flex)-->
+          <div class="flex flex-col sm:flex-col md:flex-row lg:justify-center">
+            <div class="w-[277.96px] h-[262.51] z-30 hover:scale-[112%] hover:z-40 hover:bg-[#1f1f1fcf] hover:delay-150 hover:duration-300 rounded-lg">
+              <br/><!--Salto de linea-->
+              <button>
+                <a href="https://www.youtube.com/watch?v=SuzA_1ZBt98">
+                  <img src="./Imagenes_Youtube/i9.webp" class="w-[273px] rounded-lg" alt="i9 12 Gen" id="VideoIMG9" onmouseleave="imgSalir9()" onmouseenter="imgEntrar9()"/>
+                </a>
+              </button>
+              <!--Imagen de perfil de canal-->
+              <div class="grid grid-cols-12 justify-center">
+                <div class="col-span-2">
+                  <img class="IMG rounded-full w-[30px] mt-1 ml-2" src="Imagenes_Youtube/i9mini.jpg"  alt="Jose Antonio Pontón"/>
+                </div>
+                <!--Vista previa e informacion del video-->
+                <div class="col-span-9 text-sm">
+                  <h5>Intel Core i9 - 12900K</h5>
+                  <p class="fgris-claro">Jose Antonio Pontón</p>
+                  <p class="fgris-claro">8k vistas • Hace 11 meses</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-[277.96px] h-[262.51] z-30 hover:scale-[112%] hover:z-40 hover:bg-[#1f1f1fcf] hover:delay-150 hover:duration-300 rounded-lg">
+              <br/><!--Salto de linea-->
+              <button>
+                <a href="https://www.youtube.com/watch?v=_qABWE9VBnw">
+                  <img src="./Imagenes_Youtube/Ann.webp" class="w-[273px] rounded-lg" alt="ANNISOKAY" id="VideoIMGA" onmouseleave="imgSalirA()" onmouseenter="imgEntrarA()"/>
+                </a>
+              </button>
+              <!--Imagen de perfil de canal-->
+              <div class="grid grid-cols-12 justify-center">
+                <div class="col-span-2">
+                  <img class="IMG rounded-full w-[30px] mt-1 ml-2" src="Imagenes_Youtube/Annmini.jpg"  alt="ANNISOKAY"/>
+                </div>
+                <!--Vista previa e informacion del video-->
+                <div class="col-span-9 text-sm">
+                  <h5>ANNISOKAY - Good Stories</h5>
+                  <p class="fgris-claro">Arising empire</p>
+                  <p class="fgris-claro">1.5 M de vistas • Hace 3 años </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-col md:flex-row lg:justify-center"> 
+            <div class="center970 w-[277.96px] h-[262.51] z-30 hover:scale-[112%] hover:z-40 hover:bg-[#1f1f1fcf] hover:delay-150 hover:duration-300 rounded-lg">
+              <br/><!--Salto de linea-->
+              <button>
+                <a href="https://www.youtube.com/watch?v=BDaM3x4IlDA">
+                  <img src="./Imagenes_Youtube/Skyharbor.webp" class="w-[273px] rounded-lg" alt="Skyharbor" id="VideoIMGB" onmouseleave="imgSalirB()" onmouseenter="imgEntrarB()"/>
+                </a>
+              </button>
+              <!--Imagen de perfil de canal-->
+              <div class="grid grid-cols-12 justify-center">
+                <div class="col-span-2">
+                  <img class="IMG rounded-full w-[30px] mt-1 ml-2" src="Imagenes_Youtube/Skyharbormini.jpg"  alt="Skyharbor"/>
+                </div>
+                <!--Vista previa e informacion del video-->
+                <div class="col-span-9 text-sm">
+                  <h5>Skyharbor - Dissent</h5>
+                  <p class="fgris-claro">Skyharbor</p>
+                  <p class="fgris-claro">55k vistas • Hace 4 años</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-[277.96px] h-[262.51] z-30 hover:scale-[112%] hover:z-40 hover:bg-[#1f1f1fcf] hover:delay-150 hover:duration-300 rounded-lg">
+              <br/><!--Salto de linea-->
+              <button>
+                <a href="https://www.youtube.com/watch?v=WRsjlOOIylg">
+                  <img src="./Imagenes_Youtube/TesseracT.webp" class="w-[273px] rounded-lg" alt="TesseracT" id="VideoIMGC" onmouseleave="imgSalirC()" onmouseenter="imgEntrarC()"/>
+                </a>
+              </button>
+              <!--Imagen de perfil de canal-->
+              <div class="grid grid-cols-12 justify-center">
+                <div class="col-span-2">
+                  <img class="IMG rounded-full w-[30px] mt-1 ml-2" src="Imagenes_Youtube/TesseracTmini.jpg"  alt="TesseracT"/>
+                </div>
+                <!--Vista previa e informacion del video-->
+                <div class="col-span-9 text-sm">
+                  <h5>TesseracT - Hexes</h5>
+                  <p class="fgris-claro">TesseracT</p>
+                  <p class="fgris-claro">1.2 M de vistas • Hace 6 años</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </section>
+    
+    </section>
+  
+  </body>
+  <script src="./index.js"></script>
+</html>

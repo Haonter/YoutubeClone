@@ -1,0 +1,98 @@
+@media only screen and (max-width: 570px) {
+    .none570{
+        display: none;
+    }
+}
+@media only screen and (max-width: 767px) {   /* GAP 100 */
+    
+    
+    .col2{
+        grid-column: span 100;
+    }
+}
+@media only screen and (min-width: 768px) {   /* GAP 96 */
+    .col1{
+        grid-column: span 6;
+    }
+    .col2{
+        grid-column: span 94;
+    }
+}
+@media only screen and (max-width: 850px) {   /* NONE */
+    .none850{
+        display:none;
+    }
+}
+@media only screen and (max-width: 970px) {   /* flex-col-970 */ /* Justify-center */
+    .flex-col-970{
+        display:flex;
+        flex-direction: column;
+    }
+    .center970{
+        justify-items: center;
+    }
+}
+
+
+/* NavBar */
+@media only screen and (max-width: 1040px) {
+    .width1040{
+        width: 40vw;
+    }
+}
+@media only screen and (min-width: 1041px) {
+    .width1250{
+        width: 40vw;
+    }
+}
+
+/* Tipografias / Fuentes */
+.font-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.fgris-claro{
+    font-size:smaller;
+    color: #AAAAAA;
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(100,1fr);    /*fr= fraccion de pantalla*/
+}
+
+
+/* Trabajar input-style para varias resoluciones ********************************************** 👨🏻‍💻👨🏻‍💻👨🏻‍💻 *************************/
+.input-style{
+    border-style:solid;
+    text-decoration-color: #373737;
+}
+
+.border{
+    border-width: 1px;
+    border-color: #4B4B4B;
+}
+.border_boton_blanco{
+    border-width: 1px;
+    border-color: #4B4B4B;
+    background-color: white;
+    border-radius: 60px;
+    border-width: 0.1vmax;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.br{
+    background-color: #373737;
+    border-radius: 60px;
+    border-width: 0.1vmax;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.boton-style:hover{
+    background-color: #4D4D4D;
+    border-radius: 60px;
+    border-width: 0.1vmax;
+    margin-top: 10px;
+    margin-left: 5px;
+}

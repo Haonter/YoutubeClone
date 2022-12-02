@@ -125,9 +125,9 @@ function imgSalirB(){
 function imgEntrarC(){
     setTimeout(cambio,10);
     function cambio(){
-        IMGC.src='Imagenes_Youtube/Tesseract2.webp';
+        IMGC.src='Imagenes_Youtube/TesseracT2.webp';
     }
 }
 function imgSalirC(){
-    IMGC.src='Imagenes_Youtube/Tesseract.webp';
+    IMGC.src='Imagenes_Youtube/TesseracT.webp';
 }
